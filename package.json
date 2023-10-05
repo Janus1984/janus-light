@@ -1,13 +1,13 @@
 {
-    "name": "primer-light",
-    "displayName": "Primer Light",
-    "description": "This is a port of the primer light theme from sublime text.",
-    "version": "0.0.5",
-    "publisher": "andrewmarkle",
-    "icon": "images/logo.png",
+    "name": "janus-light",
+    "displayName": "Janus Light",
+    "description": "This color theme is just for janus",
+    "version": "0.0.1",
+    "publisher": "Janus",
+    "icon": "images/logo.jpg",
     "repository": {
         "type": "git",
-        "url": "https://github.com/andrewmarkle/primer-light"
+        "url": "https://github.com/Janus1984/janus-light.git"
     },
     "engines": {
         "vscode": "^1.19.0"
@@ -18,16 +18,9 @@
     "contributes": {
         "themes": [
             {
-                "label": "Primer Light",
+                "label": "Janus Light",
                 "uiTheme": "vs",
-                "path": "./themes/Primer-light-color-theme.json"
-            }
-        ],
-        "iconThemes": [
-            {
-                "id": "primer",
-                "label": "Primer Light",
-                "path": "./Primer-light-icons.json"
+                "path": "./themes/Janus-light-color-theme.json"
             }
         ]
     }

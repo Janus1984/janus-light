@@ -1,5 +1,5 @@
 {
-	"name": "Primer Light",
+	"name": "Janus Light",
 	"type": "light",
 	"colors": {
 		// Refefence here: https://code.visualstudio.com/docs/getstarted/theme-color-reference
@@ -53,16 +53,16 @@
 		// Lists and Trees
 		// Colors for list and trees like the File Explorer.
 		// An active list/tree has keyboard focus, an inactive does not.
-		"list.activeSelectionBackground": "#3d82c6",
+		"list.activeSelectionBackground": "#79a1d9",
 		"list.activeSelectionForeground": "#fff",
 		// "list.dropBackground": "#ddd",
 		"list.focusBackground": "#dbebfd",
 		"list.focusForeground": "#333",
-		"list.highlightForeground": "#3d82c6",
+		"list.highlightForeground": "#79a1d9",
 		"list.hoverBackground": "#fff",
 		"list.hoverForeground": "#000",
 		"list.inactiveSelectionBackground": "#dbebfd",
-		"list.inactiveSelectionForeground": "#4180C6",
+		"list.inactiveSelectionForeground": "#79a1d9",
 		// "list.inactiveFocusBackground": "#ff0000",
 		// "list.inactiveFocusForeground": "#333",
 		// "list.invalidItemForeground": "#333",
@@ -72,8 +72,8 @@
 		"activityBar.dropBackground": "#fff",
 		"activityBar.foreground": "#333",
 		"activityBar.border": "#ddd",
-		"activityBarBadge.background": "#ddd",
-		"activityBarBadge.foreground": "#333",
+		"activityBarBadge.background": "#4b82cfeb",
+		"activityBarBadge.foreground": "#fffffb",
 		// Sidebar
 		// The Side Bar contains views like the Explorer and Search.
 		"sideBar.background": "#f5f5f5",
@@ -90,21 +90,21 @@
 		// "editorGroupHeader.tabsBackground": "#fff",
 		// "editorGroupHeader.noTabsBackground": "#fff",
 		// "editorGroupHeader.tabsBorder": "#343d4a",
-		"tab.activeBackground": "#3d82c6",
-		"tab.inactiveBackground": "#fff",
-		"tab.activeForeground": "#fff",
-		"tab.activeBorder": "#3d82c6",
+		"tab.activeBackground": "#fffffb",
+		"tab.activeForeground": "#666666",
+		"tab.activeBorder": "#ffffff",
+		"tab.border": "#a7a7a753",
+		"tab.inactiveBackground": "#f3f3f3",
 		"tab.inactiveForeground": "#666",
-		"tab.border": "#fff",
 		"tab.unfocusedActiveForeground": "#fff",
 		"tab.unfocusedInactiveForeground": "#666666",
 		"tab.unfocusedActiveBorder": "#3d82c6",
 		// Editor Colors
 		// The most prominent editor colors are the token colors that are based on the language grammar installed.
-		"editor.background": "#fff",
+		"editor.background": "#fffffb",
 		"editor.foreground": "#333",
-		"editorCursor.background": "#333",
-		"editorCursor.foreground": "#333",
+		"editorCursor.foreground": "#000000b2",
+		"editorCursor.background": "#fffffb",
 		"editor.selectionBackground": "#acd5ff",
 		"editor.selectionHighlightBackground": "#e9f4ff",
 		// "editor.inactiveSelectionBackground": "#d70bbf",
@@ -124,8 +124,9 @@
 		"editorIndentGuide.background": "#ececec7b",
 		"editorRuler.foreground": "#e8e8e8",
 		// Code Lens
-		"editorCodeLens.foreground": "#0366d6",
+		"editorCodeLens.foreground": "#000000b2",
 		// Matching brackets
+		"editorBracketHighlight.foreground1": "#000000b2",
 		"editorBracketMatch.background": "#F0F5FA",
 		"editorBracketMatch.border": "#e8e8e8",
 		// Overview Ruler
@@ -136,12 +137,12 @@
 		// "editorOverviewRuler.selectionHighlightForeground":"#ff0000",
 		// "editorOverviewRuler.wordHighlightForeground":"#ff0000",
 		// "editorOverviewRuler.wordHighlightStrongForeground":"#ff0000",
-		"editorOverviewRuler.modifiedForeground":"#5F7387",
-		"editorOverviewRuler.addedForeground":"#A1DF8A",
-		"editorOverviewRuler.deletedForeground":"#EB5368",
-		"editorOverviewRuler.errorForeground":"#d21d00",
-		"editorOverviewRuler.warningForeground":"#deb800",
-		"editorOverviewRuler.infoForeground":"#deb800",
+		"editorOverviewRuler.modifiedForeground": "#5F7387",
+		"editorOverviewRuler.addedForeground": "#A1DF8A",
+		"editorOverviewRuler.deletedForeground": "#EB5368",
+		"editorOverviewRuler.errorForeground": "#d21d00",
+		"editorOverviewRuler.warningForeground": "#deb800",
+		"editorOverviewRuler.infoForeground": "#deb800",
 		// Errors and warnings
 		"editorError.border": "#fff",
 		"editorError.foreground": "#d21d00",
@@ -158,14 +159,14 @@
 		"diffEditor.removedTextBackground": "#ffdce0",
 		// Editor Widget Colors
 		// The Editor widget is shown in front of the editor content. Examples are the Find/Replace dialog, the suggestion widget, and the editor hover.
-		"editorWidget.background":"#fff",
+		"editorWidget.background": "#fff",
 		"editorWidget.border": "#ddd",
-		"editorSuggestWidget.background":"#fff",
-		"editorSuggestWidget.border":"#ddd",
-		"editorSuggestWidget.foreground":"#333",
-		"editorSuggestWidget.highlightForeground":"#3d82c6",
-		"editorSuggestWidget.selectedBackground":"#acd5ff",
-		"editorHoverWidget.background":"#fff",
+		"editorSuggestWidget.background": "#fff",
+		"editorSuggestWidget.border": "#ddd",
+		"editorSuggestWidget.foreground": "#333",
+		"editorSuggestWidget.highlightForeground": "#3d82c6",
+		"editorSuggestWidget.selectedBackground": "#acd5ff",
+		"editorHoverWidget.background": "#f3f3f3",
 		"editorHoverWidget.border": "#ddd",
 		// Debug Exception Widget
 		// The Debug Exception widget is a peek view that shows in the editor when debug stops at an exception.
@@ -194,11 +195,11 @@
 		// "peekViewTitleLabel.foreground":"#ff0000",
 		// Merge Conflicts
 		// Merge conflict decorations are shown when the editor contains special diff ranges.
-		"merge.currentHeaderBackground":"#f66a0a",
+		"merge.currentHeaderBackground": "#f66a0a",
 		// "merge.currentContentBackground":"#ff0000",
 		// "merge.incomingHeaderBackground":"#ff0000",
 		// "merge.incomingContentBackground":"#ff0000",
-		"merge.border":"#fff",
+		"merge.border": "#fff",
 		// "merge.commonContentBackground":"#ff0000",
 		// "merge.commonHeaderBackground":"#ff0000",
 		// "editorOverviewRuler.currentContentForeground":"#ff0000",
@@ -211,8 +212,8 @@
 		"panelTitle.activeForeground": "#333",
 		"panelTitle.inactiveForeground": "#666",
 		// Status Bar Colors
-		// The Status Bar is shown in the bottom of the workbench.
-		"statusBar.background": "#ddd",
+		// The Status Bar is shown in the bottom of the workbench.            "statusBarItem.remoteHoverForeground": "#fffffb",
+		"statusBar.background": "#f7f7f7",
 		"statusBar.foreground": "#4b4b4b",
 		"statusBar.border": "#ddd",
 		"statusBar.debuggingBackground": "#f7f7f7",
@@ -222,6 +223,8 @@
 		"statusBarItem.hoverBackground": "#ddd",
 		"statusBarItem.prominentBackground": "#f7f7f7f7",
 		"statusBarItem.prominentHoverBackground": "#ddd",
+		"statusBarItem.remoteBackground": "#4b82cfeb",
+		"statusBarItem.remoteHoverForeground": "#fffffb",
 		// Title Bar Colors (macOS)
 		// Leaving this section empty to stick with the native macOS title bar
 		//
@@ -242,7 +245,8 @@
 		// "pickerGroup.border":"#ff0000",
 		// "pickerGroup.foreground":"#ff0000",
 		// Terminal Colors
-		"terminal.background": "#142638",
+		"terminal.background": "#fffffb",
+		"terminalCursor.foreground": "#000000b2",
 		"terminal.foreground": "#fff",
 		"terminal.ansiBlack": "#000",
 		"terminal.ansiRed": "#ff6c69",
@@ -267,16 +271,16 @@
 		// "welcomePage.buttonHoverBackground":"#ff0000",
 		// "walkThrough.embeddedEditorBackground":"#ff0000",
 		// Git Colors
-		"gitDecoration.modifiedResourceForeground":"#3d82c6",
-		"gitDecoration.deletedResourceForeground":"#d21d00",
-		"gitDecoration.untrackedResourceForeground":"#444d56",
-		"gitDecoration.ignoredResourceForeground":"#2f363d",
-		"gitDecoration.conflictingResourceForeground":"#f66a0a"
+		"gitDecoration.modifiedResourceForeground": "#3d82c6",
+		"gitDecoration.deletedResourceForeground": "#d21d00",
+		"gitDecoration.untrackedResourceForeground": "#444d56",
+		"gitDecoration.ignoredResourceForeground": "#a7a7a7",
+		"gitDecoration.conflictingResourceForeground": "#f66a0a"
 	},
 	"tokenColors": [
 		{
 			"settings": {
-				"foreground": "#333"				
+				"foreground": "#333"
 			}
 		},
 		{
@@ -385,14 +389,14 @@
 		},
 		{
 			"name": "Strings, Inherited Class",
-			"scope":[
-					"string",
-					"constant.other.symbol",
-					"entity.other.inherited-class",
-					"constant.character.escape.scss",
-					"constant.character.escape.css",
-					"constant.language.symbol"
-				],
+			"scope": [
+				"string",
+				"constant.other.symbol",
+				"entity.other.inherited-class",
+				"constant.character.escape.scss",
+				"constant.character.escape.css",
+				"constant.language.symbol"
+			],
 			"settings": {
 				"foreground": "#4180C6"
 			}
@@ -619,6 +623,41 @@
 			"scope": "keyword.other.important",
 			"settings": {
 				"fontStyle": "bold"
+			}
+		},
+		{
+			"name": "cmake log error",
+			"scope": "markup.other.log.error",
+			"settings": {
+				"foreground": "#d5294ee2"
+			}
+		},
+		{
+			"name": "cmake log warn",
+			"scope": "markup.other.log.warn",
+			"settings": {
+				"foreground": "#e7a223"
+			}
+		},
+		{
+			"name": "cmake log info",
+			"scope": "markup.other.log.info",
+			"settings": {
+				"foreground": "#2aaba0"
+			}
+		},
+		{
+			"name": "cmake log debug",
+			"scope": "markup.other.log.debug",
+			"settings": {
+				"foreground": "#888585"
+			}
+		},
+		{
+			"name": "cmake log highlight",
+			"scope": "markup.other.log.highlight",
+			"settings": {
+				"foreground": "#0e860cd7"
 			}
 		}
 	]
