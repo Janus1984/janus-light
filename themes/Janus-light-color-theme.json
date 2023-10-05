@@ -624,41 +624,6 @@
 			"settings": {
 				"fontStyle": "bold"
 			}
-		},
-		{
-			"name": "cmake log error",
-			"scope": "markup.other.log.error",
-			"settings": {
-				"foreground": "#d5294ee2"
-			}
-		},
-		{
-			"name": "cmake log warn",
-			"scope": "markup.other.log.warn",
-			"settings": {
-				"foreground": "#e7a223"
-			}
-		},
-		{
-			"name": "cmake log info",
-			"scope": "markup.other.log.info",
-			"settings": {
-				"foreground": "#2aaba0"
-			}
-		},
-		{
-			"name": "cmake log debug",
-			"scope": "markup.other.log.debug",
-			"settings": {
-				"foreground": "#888585"
-			}
-		},
-		{
-			"name": "cmake log highlight",
-			"scope": "markup.other.log.highlight",
-			"settings": {
-				"foreground": "#0e860cd7"
-			}
 		}
 	]
 }
