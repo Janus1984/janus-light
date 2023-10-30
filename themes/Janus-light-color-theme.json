@@ -340,14 +340,35 @@
 		},
 		{
 			"name": "Functions",
-			"scope": "entity.name.function, meta.require, support.function.any-method",
+			"scope": [
+				"entity.name.function",
+				"meta.require",
+				"support.function.any-method"
+			],
 			"settings": {
 				"foreground": "#795DA3"
 			}
 		},
 		{
 			"name": "Classes",
-			"scope": "support.class, entity.name.class, entity.name.type.class",
+			"scope": [
+				"support.class",
+				"entity.name.class",
+				"entity.name.type.class"
+			],
+			"settings": {
+				"foreground": "#0086B3"
+			}
+		},
+		{
+			"name": "Variable Type",
+			"scope": [
+				"entity.name.type",
+				"storage.type.annotation.python",
+				"storage.modifier.optional.python",
+				"meta.type.annotation.python",
+				"variable.parameter.function.annotation.python"
+			],
 			"settings": {
 				"foreground": "#0086B3"
 			}
@@ -405,7 +426,7 @@
 			"name": "Integers",
 			"scope": "constant.numeric",
 			"settings": {
-				"foreground": "#0086B3"
+				"foreground": "#4180C6"
 			}
 		},
 		{
