@@ -3,14 +3,14 @@
 	"type": "light",
 	"colors": {
 		// Refefence here: https://code.visualstudio.com/docs/getstarted/theme-color-reference
-		// Base Colors
+		// ----[ Base Colors
 		"focusBorder": "#ddd",
 		"foreground": "#333",
 		"widget.shadow": "#dddddd",
 		"selection.background": "#3d81c683",
 		// "descriptionForeground": "#ff0000",
 		// "errorForeground": "#ff0000",
-		// Text Colors
+		// ----[ Text Colors
 		// Colors inside a text document, such as the welcome page.
 		// "textBlockQuote.background": "#3d82c6",
 		// "textBlockQuote.border":"#ff0000",
@@ -18,17 +18,17 @@
 		// "textLink.foreground": "#ff009d",
 		// "textPreformat.foreground":"#ff0000",
 		// "textSeparator.foreground":"#ff0000",
-		// Button Control
+		// ----[ Button Control
 		// Such as the reload buttons in the extension windows
 		"button.background": "#3d82c6",
 		"button.hoverBackground": "#064e93",
 		"button.foreground": "#fff",
-		// Dropdown Control
+		// ----[ Dropdown Control
 		// A set of colors for all dropdown widgets such as in the Integrated Terminal or the Output panel.
 		"dropdown.background": "#fff",
 		"dropdown.border": "#ddd",
 		"dropdown.foreground": "#333",
-		// Input Control
+		// ----[ Input Control
 		// Colors for input controls such as in the Search view or the Find/Replace dialog.
 		"input.background": "#fff",
 		"input.foreground": "#333",
@@ -41,16 +41,16 @@
 		"inputValidation.infoBorder": "#0086B3",
 		"inputValidation.warningBackground": "#fff",
 		"inputValidation.warningBorder": "#F0C36F",
-		// Scrollbar
+		// ----[ Scrollbar
 		"scrollbarSlider.background": "#cfcfcf52",
 		"scrollbarSlider.hoverBackground": "#cfcfcf9e",
 		"scrollbarSlider.activeBackground": "#cfcfcfee",
-		// Badge
+		// ----[ Badge
 		"badge.background": "#3d82c6",
 		"badge.foreground": "#fff",
-		// Progress Bar
+		// ----[ Progress Bar
 		"progressBar.background": "#3d82c6",
-		// Lists and Trees
+		// ----[ Lists and Trees
 		// Colors for list and trees like the File Explorer.
 		// An active list/tree has keyboard focus, an inactive does not.
 		"list.activeSelectionBackground": "#79a1d9",
@@ -66,7 +66,7 @@
 		// "list.inactiveFocusBackground": "#ff0000",
 		// "list.inactiveFocusForeground": "#333",
 		// "list.invalidItemForeground": "#333",
-		// Activity Bar
+		// ----[ Activity Bar
 		// The Activity Bar is displayed either on the far left or right of the workbench and allows fast switching between views of the Side Bar.
 		"activityBar.background": "#f5f5f5",
 		"activityBar.dropBackground": "#fff",
@@ -74,7 +74,7 @@
 		"activityBar.border": "#ddd",
 		"activityBarBadge.background": "#4b82cfeb",
 		"activityBarBadge.foreground": "#fffffb",
-		// Sidebar
+		// ----[ Sidebar
 		// The Side Bar contains views like the Explorer and Search.
 		"sideBar.background": "#f5f5f5",
 		"sideBar.foreground": "#333",
@@ -82,7 +82,7 @@
 		"sideBarTitle.foreground": "#333",
 		"sideBarSectionHeader.background": "#fff",
 		"sideBarSectionHeader.foreground": "#333",
-		// Editor Groups & Tabs
+		// ----[ Editor Groups & Tabs
 		// Editor Groups are the containers of editors. There can be up to three editor groups. A Tab is the container of an editor.
 		// Multiple Tabs can be opened in one editor group.
 		// "editorGroup.background": "#272d38",
@@ -99,7 +99,7 @@
 		"tab.unfocusedActiveForeground": "#fff",
 		"tab.unfocusedInactiveForeground": "#666666",
 		"tab.unfocusedActiveBorder": "#3d82c6",
-		// Editor Colors
+		// ----[ Editor Colors
 		// The most prominent editor colors are the token colors that are based on the language grammar installed.
 		"editor.background": "#fffffb",
 		"editor.foreground": "#333",
@@ -118,18 +118,18 @@
 		"editor.lineHighlightBorder": "#F0F5FA",
 		"editorLink.activeForeground": "#0366d6",
 		"editor.rangeHighlightBackground": "#fff78a7e",
-		// Rulers, whitespace, indent-lines, line numbers
+		// ----[ Rulers, whitespace, indent-lines, line numbers
 		"editorLineNumber.foreground": "#b3b3b3",
 		"editorWhitespace.foreground": "#ececec7b",
 		"editorIndentGuide.background": "#ececec7b",
 		"editorRuler.foreground": "#e8e8e8",
-		// Code Lens
+		// ----[ Code Lens
 		"editorCodeLens.foreground": "#000000b2",
-		// Matching brackets
+		// ----[ Matching brackets
 		"editorBracketHighlight.foreground1": "#000000b2",
 		"editorBracketMatch.background": "#F0F5FA",
 		"editorBracketMatch.border": "#e8e8e8",
-		// Overview Ruler
+		// ----[ Overview Ruler
 		// This ruler is located beneath the scroll bar on the right edge of the editor and gives an overview of the decorations in the editor.
 		"editorOverviewRuler.border": "#ddd",
 		// "editorOverviewRuler.findMatchForeground":"#abd4ff",
@@ -143,21 +143,21 @@
 		"editorOverviewRuler.errorForeground": "#d21d00",
 		"editorOverviewRuler.warningForeground": "#deb800",
 		"editorOverviewRuler.infoForeground": "#deb800",
-		// Errors and warnings
+		// ----[ Errors and warnings
 		"editorError.border": "#fff",
 		"editorError.foreground": "#d21d00",
 		"editorWarning.border": "#fff",
 		"editorWarning.foreground": "#deb800",
 		"editorInfo.border": "#fff",
 		"editorInfo.foreground": "#deb800",
-		// Gutter
+		// ----[ Gutter
 		"editorGutter.modifiedBackground": "#F0C36F",
 		"editorGutter.addedBackground": "#A1DF8A",
 		"editorGutter.deletedBackground": "#EB5368",
-		// Diff Editor
+		// ----[ Diff Editor
 		"diffEditor.insertedTextBackground": "#e6ffec",
 		"diffEditor.removedTextBackground": "#ffdce0",
-		// Editor Widget Colors
+		// ----[ Editor Widget Colors
 		// The Editor widget is shown in front of the editor content. Examples are the Find/Replace dialog, the suggestion widget, and the editor hover.
 		"editorWidget.background": "#fff",
 		"editorWidget.border": "#ddd",
@@ -168,17 +168,17 @@
 		"editorSuggestWidget.selectedBackground": "#acd5ff",
 		"editorHoverWidget.background": "#f3f3f3",
 		"editorHoverWidget.border": "#ddd",
-		// Debug Exception Widget
+		// ----[ Debug Exception Widget
 		// The Debug Exception widget is a peek view that shows in the editor when debug stops at an exception.
 		// "debugExceptionWidget.background":"#ff0000",
 		// "debugExceptionWidget.border":"#ff0000",
-		// Editor Marker
+		// ----[ Editor Marker
 		// The editor marker view shows when navigating to errors and warnings in the editor (Go to Next Error or Warning command).
 		// "editorMarkerNavigation.background":"#ff0000",
 		// "editorMarkerNavigationError.background":"#ff0000",
 		// "editorMarkerNavigationWarning.background":"#ff0000",
 		// "editorMarkerNavigationInfo.background":"#ff0000",
-		// Peek View Colors
+		// ----[ Peek View Colors
 		// Peek views are used to show references and declarations as a view inside the editor.
 		// "peekView.border":"#ff0000",
 		// "peekViewEditor.background":"#ff0000",
@@ -193,7 +193,7 @@
 		// "peekViewTitle.background":"#ff0000",
 		// "peekViewTitleDescription.foreground":"#ff0000",
 		// "peekViewTitleLabel.foreground":"#ff0000",
-		// Merge Conflicts
+		// ----[ Merge Conflicts
 		// Merge conflict decorations are shown when the editor contains special diff ranges.
 		"merge.currentHeaderBackground": "#f66a0a",
 		// "merge.currentContentBackground":"#ff0000",
@@ -211,7 +211,7 @@
 		"panelTitle.activeBorder": "#ddd",
 		"panelTitle.activeForeground": "#333",
 		"panelTitle.inactiveForeground": "#666",
-		// Status Bar Colors
+		// ----[ Status Bar Colors
 		// The Status Bar is shown in the bottom of the workbench.            "statusBarItem.remoteHoverForeground": "#fffffb",
 		"statusBar.background": "#f7f7f7",
 		"statusBar.foreground": "#4b4b4b",
@@ -225,7 +225,7 @@
 		"statusBarItem.prominentHoverBackground": "#ddd",
 		"statusBarItem.remoteBackground": "#4b82cfeb",
 		"statusBarItem.remoteHoverForeground": "#fffffb",
-		// Title Bar Colors (macOS)
+		// ----[ Title Bar Colors (macOS)
 		// Leaving this section empty to stick with the native macOS title bar
 		//
 		// Notification Dialog Colors
@@ -237,14 +237,14 @@
 		"notification.buttonHoverBackground": "#064e93",
 		"notification.errorBackground": "#f9f2f4",
 		"notification.errorForeground": "#c7264e",
-		// Extensions
+		// ----[ Extensions
 		"extensionButton.prominentBackground": "#3d82c6",
 		"extensionButton.prominentHoverBackground": "#3d82c6",
 		"extensionButton.prominentForeground": "#fff",
-		// Quick Picker (Quick Open) color for grouping borders.
+		// ----[ Quick Picker (Quick Open) color for grouping borders.
 		// "pickerGroup.border":"#ff0000",
 		// "pickerGroup.foreground":"#ff0000",
-		// Terminal Colors
+		// ----[ Terminal Colors
 		"terminal.background": "#fffffb",
 		"terminalCursor.foreground": "#000000b2",
 		"terminal.foreground": "#fff",
@@ -264,13 +264,13 @@
 		"terminal.ansiBrightMagenta": "#ff77ff",
 		"terminal.ansiBrightCyan": "#85e7ee",
 		"terminal.ansiBrightWhite": "#ffffff",
-		// Debug
+		// ----[ Debug
 		"debugToolBar.background": "#fff",
-		// Welcome Page
+		// ----[ Welcome Page
 		// "welcomePage.buttonBackground":"#ff0000",
 		// "welcomePage.buttonHoverBackground":"#ff0000",
 		// "walkThrough.embeddedEditorBackground":"#ff0000",
-		// Git Colors
+		// ----[ Git Colors
 		"gitDecoration.modifiedResourceForeground": "#3d82c6",
 		"gitDecoration.deletedResourceForeground": "#d21d00",
 		"gitDecoration.untrackedResourceForeground": "#444d56",
@@ -292,7 +292,11 @@
 		},
 		{
 			"name": "Comments",
-			"scope": "comment, punctuation.definition.comment",
+			"scope": [
+				"comment",
+				"punctuation.definition.comment",
+				"comment markup.link"
+			],
 			"settings": {
 				"foreground": "#969896"
 			}
@@ -354,27 +358,29 @@
 			"scope": [
 				"support.class",
 				"entity.name.class",
-				"entity.name.type.class"
+				"entity.name.type.class",
 			],
 			"settings": {
 				"foreground": "#0086B3"
 			}
 		},
 		{
-			"name": "Variable Type",
+			"name": "Entity Name Type",
 			"scope": [
 				"entity.name.type",
-				"storage.type.annotation.python",
-				"storage.modifier.optional.python",
-				"meta.type.annotation.python",
-				"variable.parameter.function.annotation.python"
+				"storage.type.built-in",
+				"storage.type.annotation",
+				"storage.type.primitive",
+				"enttity.other.inherited-calss",
+				"support.type",
+				"support.type.property-name",
 			],
 			"settings": {
 				"foreground": "#0086B3"
 			}
 		},
 		{
-			"name": "Classes",
+			"name": "Meta Classes",
 			"scope": "meta.class",
 			"settings": {
 				"foreground": "#333"
@@ -419,7 +425,7 @@
 				"constant.language.symbol"
 			],
 			"settings": {
-				"foreground": "#4180C6"
+				"foreground": "#17837ad0"
 			}
 		},
 		{
