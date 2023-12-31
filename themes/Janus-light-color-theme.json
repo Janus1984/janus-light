@@ -2,7 +2,8 @@
 	"name": "Janus Light",
 	"type": "light",
 	"colors": {
-		// Refefence here: https://code.visualstudio.com/docs/getstarted/theme-color-reference
+		// Reference here: https://code.visualstudio.com/docs/getstarted/theme-color-reference
+		// https://www.sublimetext.com/docs/scope_naming.html
 		// ----[ Base Colors
 		"focusBorder": "#ddd",
 		"foreground": "#333",
