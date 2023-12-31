@@ -8,6 +8,8 @@
 		"foreground": "#333",
 		"widget.shadow": "#dddddd",
 		"selection.background": "#3d81c683",
+		"titleBar.activeBackground": "#e5e5e5",
+		"titleBar.activeForeground": "#333",
 		// "descriptionForeground": "#ff0000",
 		// "errorForeground": "#ff0000",
 		// ----[ Text Colors
@@ -284,19 +286,42 @@
 			}
 		},
 		{
+			// 变量
 			"name": "Instance",
 			"scope": [
-				"variable.other",
-				"variable.other.readwrite"
+				"variable.other", // 声明的变量
+				"variable.other.readwrite", // let、var声明的变量
+				"variable.other.member", // 类的字段
+				"variable.other.object.property" // 调用对象属性方法
 			],
 			"settings": {
 				"foreground": "#333"
 			}
 		},
 		{
+			// this super
+			"name": "Super",
+			"scope": [
+				"variable.language",
+			],
+			"settings": {
+				"foreground": "#ED6A43"
+			}
+		},
+		{
+			// 关键字
+			"name": "Keywords",
+			"scope": "keyword",
+			"settings": {
+				"foreground": "#A71D5D"
+			}
+		},
+		{
+			// 注释
 			"name": "Comments",
 			"scope": [
-				"comment",
+				"comment.line", // 单行注释
+				"comment.block", // 多行注释
 				"punctuation.definition.comment",
 				"comment markup.link"
 			],
@@ -305,6 +330,7 @@
 			}
 		},
 		{
+			// 标点
 			"name": "Punctuation",
 			"scope": "punctuation.definition.string, punctuation.definition.variable, punctuation.definition.string, punctuation.definition.parameters, punctuation.definition.string, punctuation.definition.array",
 			"settings": {
@@ -312,13 +338,15 @@
 			}
 		},
 		{
-			"name": "Delimeters",
+			// 分隔符
+			"name": "Delimiters",
 			"scope": "punctuation.section.scope, support.function.core",
 			"settings": {
 				"foreground": "#333"
 			}
 		},
 		{
+			// 运算符
 			"name": "Operators",
 			"scope": "keyword.operator",
 			"settings": {
@@ -326,41 +354,59 @@
 			}
 		},
 		{
-			"name": "Keywords",
-			"scope": "keyword",
-			"settings": {
-				"foreground": "#A71D5D"
-			}
-		},
-		{
-			// variable
+			// 常量
 			"name": "Variable, Constant, Blocks, Instance Variables",
 			"scope": [
-				"variable",
-				"variable.other.constant",
-				"variable.other.block",
-				"variable.other.readwrite.instance",
-				"variable.parameter.function",
+				"entity.name.constant", // 常数
+				// "variable",
+				"variable.other.constant", // const声明的不可变变量的颜色
+				"constant.other.caps.python", // Python中的大写常量
+				// "variable.other.block",
+				// "variable.other.readwrite.instance",
 			],
 			"settings": {
 				"foreground": "#ED6A43"
 			}
 		},
 		{
-			// function, method
+			// 函数名
 			"name": "Functions",
 			"scope": [
-				"entity.name.function",
-				"entity.name.method",
+				"entity.name.function", // 函数名
+				"entity.name.method", // 方法名
+				"variable.function", // 被调用的函数和方法
+				"meta.function-call.python", // Python中的函数调用
 				"meta.require",
-				"support.function.any-method"
+				"support.function",
+				"support.function.any-method",
+				"keyword.other.special-method",
 			],
 			"settings": {
 				"foreground": "#795DA3"
 			}
 		},
 		{
-			// class
+			// 函数形参
+			"name": "Function Parameters",
+			"scope": [
+				"variable.parameter",
+			],
+			"settings": {
+				"foreground": "#333"
+			}
+		},
+		{
+			// 枚举值
+			"name": "Enum Values",
+			"scope": [
+				"variable.other.enummember.cpp",
+			],
+			"settings": {
+				"foreground": "#ED6A43"
+			}
+		},
+		{
+			// 基类
 			"name": "Classes",
 			"scope": [
 				"support.class",
@@ -373,7 +419,7 @@
 			}
 		},
 		{
-			// type
+			// 类型名
 			"name": "Entity Name Type",
 			"scope": [
 				"entity.name.type",
@@ -382,6 +428,7 @@
 				"storage.type.primitive",
 				"support.type",
 				"support.type.property-name",
+				"support.class.cpp" // vector string
 			],
 			"settings": {
 				// perfect #4B83CD
@@ -396,13 +443,6 @@
 		// 	}
 		// },
 		{
-			"name": "Methods",
-			"scope": "keyword.other.special-method",
-			"settings": {
-				"foreground": "#795DA3"
-			}
-		},
-		{
 			"name": "Storage",
 			"scope": "storage",
 			"settings": {
@@ -410,14 +450,7 @@
 			}
 		},
 		{
-			"name": "Support",
-			"scope": "support.function",
-			"settings": {
-				"foreground": "#795DA3"
-			}
-		},
-		{
-			// true, false
+			// 字面量
 			"name": "Constant",
 			"scope": [
 				"constant",
@@ -427,27 +460,41 @@
 				"constant.language.symbol"
 			],
 			"settings": {
-				"foreground": "#EB5368"
+				"foreground": "#5c2223cb"
 			}
 		},
 		{
+			// 字符串字面量
 			"name": "Strings",
 			"scope": [
 				"string",
 			],
 			"settings": {
 				// perfect #327d7d
-				"foreground": "#327d7d"
+				"foreground": "#3b818ce9"
 			}
 		},
 		{
+			// C++ include string
+			"name": "Include Strings",
+			"scope": [
+				"string.quoted.other.lt-gt.include.cpp"
+			],
+			"settings": {
+				"foreground": "#333",
+			}
+		},
+		{
+			// 整数字面量
 			"name": "Integers",
 			"scope": "constant.numeric",
 			"settings": {
-				"foreground": "#EB5368"
+				// perfect #EB5368
+				"foreground": "#5c2223cb"
 			}
 		},
 		{
+			// 标签
 			"name": "Tag",
 			"scope": "entity.name.tag",
 			"settings": {
@@ -455,6 +502,7 @@
 			}
 		},
 		{
+			// 属性
 			"name": "Attributes",
 			"scope": "entity.other.attribute-name",
 			"settings": {
