@@ -435,6 +435,7 @@
 			"settings": {
 				// perfect #4B83CD
 				"foreground": "#4B83CD"
+				// "foreground": "#3b818ce9"
 			}
 		},
 		// {
@@ -476,16 +477,17 @@
 				"foreground": "#3b818ce9"
 			}
 		},
-		// {
-		// C++ include string
-		// 	"name": "Include Strings",
-		// 	"scope": [
-		// 		"string.quoted.other.lt-gt.include.cpp"
-		// 	],
-		// 	"settings": {
-		// 		"foreground": "#333",
-		// 	}
-		// },
+		{
+			// C++ include string
+			"name": "Include Strings",
+			"scope": [
+				"string.quoted.other.lt-gt.include.cpp"
+			],
+			"settings": {
+				// 		"foreground": "#333",
+				"foreground": "#5c2223cb"
+			}
+		},
 		{
 			// 整数字面量
 			"name": "Integers",
@@ -567,6 +569,7 @@
 			"scope": "support.type.property-name.json",
 			"settings": {
 				"foreground": "#4B83CD"
+				// "foreground": "#3b818ce9"
 			}
 		},
 		{
