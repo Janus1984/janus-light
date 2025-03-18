@@ -300,7 +300,7 @@
 			}
 		},
 		{
-			// this super
+			// this, super
 			"name": "Super",
 			"scope": [
 				"variable.language",
@@ -384,7 +384,7 @@
 				"keyword.other.special-method",
 			],
 			"settings": {
-				"foreground": "#795DA3"
+				"foreground": "#6f5498"
 			}
 		},
 		{
@@ -434,7 +434,7 @@
 			],
 			"settings": {
 				// perfect #4B83CD
-				"foreground": "#4B83CD"
+				"foreground": "#4a83cf"
 				// "foreground": "#3b818ce9"
 			}
 		},
