@@ -300,6 +300,47 @@
 			}
 		},
 		{
+			// 常量
+			"name": "Constant",
+			"scope": [
+				"entity.name.constant", // 常数
+				// "variable",
+				"variable.other.constant", // const声明的不可变变量的颜色
+				"constant.other.caps.python", // Python中的大写常量
+				"constant.other.caps.rust", // Rust中的大写常量
+				// "variable.other.block",
+				// "variable.other.readwrite.instance",
+			],
+			"settings": {
+				"foreground": "#ED6A43"
+			}
+		},
+		{
+			// 字面量
+			"name": "Constant",
+			"scope": [
+				"constant",
+				"constant.other.symbol",
+				"constant.character.escape.scss",
+				"constant.character.escape.css",
+				"constant.language.symbol",
+			],
+			"settings": {
+				"foreground": "#5c2223cb"
+			}
+		},
+		{
+			// 字符串字面量
+			"name": "Strings",
+			"scope": [
+				"string",
+			],
+			"settings": {
+				// perfect #327d7d
+				"foreground": "#3b818ce9"
+			}
+		},
+		{
 			// this, super
 			"name": "Super",
 			"scope": [
@@ -353,21 +394,6 @@
 			"scope": "keyword.operator",
 			"settings": {
 				"foreground": "#333"
-			}
-		},
-		{
-			// 常量
-			"name": "Variable, Constant, Blocks, Instance Variables",
-			"scope": [
-				"entity.name.constant", // 常数
-				// "variable",
-				"variable.other.constant", // const声明的不可变变量的颜色
-				"constant.other.caps.python", // Python中的大写常量
-				// "variable.other.block",
-				// "variable.other.readwrite.instance",
-			],
-			"settings": {
-				"foreground": "#ED6A43"
 			}
 		},
 		{
@@ -450,31 +476,6 @@
 			"scope": "storage",
 			"settings": {
 				"foreground": "#A71D5D"
-			}
-		},
-		{
-			// 字面量
-			"name": "Constant",
-			"scope": [
-				"constant",
-				"constant.other.symbol",
-				"constant.character.escape.scss",
-				"constant.character.escape.css",
-				"constant.language.symbol",
-			],
-			"settings": {
-				"foreground": "#5c2223cb"
-			}
-		},
-		{
-			// 字符串字面量
-			"name": "Strings",
-			"scope": [
-				"string",
-			],
-			"settings": {
-				// perfect #327d7d
-				"foreground": "#3b818ce9"
 			}
 		},
 		{
