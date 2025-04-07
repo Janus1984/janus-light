@@ -2,7 +2,7 @@
     "name": "janus-light",
     "displayName": "Janus Light",
     "description": "This color theme is just for janus",
-    "version": "0.1.7",
+    "version": "0.1.9",
     "publisher": "Janus",
     "icon": "images/logo.jpg",
     "repository": {
@@ -20,7 +20,12 @@
             {
                 "label": "Janus Light",
                 "uiTheme": "vs",
-                "path": "./themes/Janus-light-color-theme.json"
+                "path": "./themes/Janus-light.json"
+            },
+            {
+                "label": "Janus Dark",
+                "uiTheme": "vs-dark",
+                "path": "./themes/Janus-dark.json"
             }
         ]
     }

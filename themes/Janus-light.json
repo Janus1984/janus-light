@@ -288,12 +288,14 @@
 		},
 		{
 			// 变量
+			// #333
 			"name": "Instance",
 			"scope": [
 				"variable.other", // 声明的变量
 				"variable.other.readwrite", // let、var声明的变量
 				"variable.other.member", // 类的字段
-				"variable.other.object.property" // 调用对象属性方法
+				"variable.other.object.property", // 调用对象属性方法
+				"variable.other.constant", // const声明的不可变变量
 			],
 			"settings": {
 				"foreground": "#333"
@@ -301,11 +303,11 @@
 		},
 		{
 			// 常量
+			// #ED6A43
 			"name": "Constant",
 			"scope": [
 				"entity.name.constant", // 常数
 				// "variable",
-				"variable.other.constant", // const声明的不可变变量的颜色
 				"constant.other.caps.python", // Python中的大写常量
 				"constant.other.caps.rust", // Rust中的大写常量
 				// "variable.other.block",
@@ -317,6 +319,7 @@
 		},
 		{
 			// 字面量
+			// #7b3b3c
 			"name": "Constant",
 			"scope": [
 				"constant",
@@ -326,22 +329,27 @@
 				"constant.language.symbol",
 			],
 			"settings": {
-				"foreground": "#5c2223cb"
+				// #5c2223cb
+				"foreground": "#7b3b3c"
 			}
 		},
 		{
 			// 字符串字面量
+			// #3b818ce9
 			"name": "Strings",
 			"scope": [
 				"string",
+				"constant.character.escape"
 			],
 			"settings": {
 				// perfect #327d7d
+				// now #3b818ce9
 				"foreground": "#3b818ce9"
 			}
 		},
 		{
 			// this, super
+			// #ED6A43
 			"name": "Super",
 			"scope": [
 				"variable.language",
