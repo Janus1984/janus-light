@@ -288,7 +288,7 @@
 		},
 		{
 			// 变量
-			// #333
+			// #4180d3
 			"name": "Instance",
 			"scope": [
 				"variable.other", // 声明的变量
@@ -298,12 +298,12 @@
 				"variable.other.constant", // const声明的不可变变量
 			],
 			"settings": {
-				"foreground": "#333"
+				"foreground": "#4180d3"
 			}
 		},
 		{
 			// 常量
-			// #ED6A43
+			// #ff9c46
 			"name": "Constant",
 			"scope": [
 				"entity.name.constant", // 常数
@@ -314,12 +314,12 @@
 				// "variable.other.readwrite.instance",
 			],
 			"settings": {
-				"foreground": "#ED6A43"
+				"foreground": "#ff9c46"
 			}
 		},
 		{
 			// 字面量
-			// #7b3b3c
+			// #895656
 			"name": "Constant",
 			"scope": [
 				"constant",
@@ -330,12 +330,12 @@
 			],
 			"settings": {
 				// #5c2223cb
-				"foreground": "#7b3b3c"
+				"foreground": "#895656"
 			}
 		},
 		{
 			// 字符串字面量
-			// #3b818ce9
+			// #489591
 			"name": "Strings",
 			"scope": [
 				"string",
@@ -344,26 +344,36 @@
 			"settings": {
 				// perfect #327d7d
 				// now #3b818ce9
-				"foreground": "#3b818ce9"
+				"foreground": "#489591"
 			}
 		},
 		{
 			// this, super
-			// #ED6A43
+			// #ff9c46
 			"name": "Super",
 			"scope": [
 				"variable.language",
 			],
 			"settings": {
-				"foreground": "#ED6A43"
+				//"foreground": "#ED6A43"
+				"foreground": "#ff9c46"
 			}
 		},
 		{
 			// 关键字
+			// #ca4242
 			"name": "Keywords",
 			"scope": "keyword",
 			"settings": {
-				"foreground": "#A71D5D"
+				"foreground": "#ca4242"
+			}
+		},
+		// storage keywords
+		{
+			"name": "Storage",
+			"scope": "storage",
+			"settings": {
+				"foreground": "#ca4242"
 			}
 		},
 		{
@@ -406,6 +416,7 @@
 		},
 		{
 			// 函数名
+			// #79619e
 			"name": "Functions",
 			"scope": [
 				"entity.name.function", // 函数名
@@ -418,17 +429,18 @@
 				"keyword.other.special-method",
 			],
 			"settings": {
-				"foreground": "#6f5498"
+				"foreground": "#79619e"
 			}
 		},
 		{
 			// 函数形参
+			// #4180d3
 			"name": "Function Parameters",
 			"scope": [
 				"variable.parameter",
 			],
 			"settings": {
-				"foreground": "#333"
+				"foreground": "#4180d3"
 			}
 		},
 		{
@@ -456,6 +468,7 @@
 		},
 		{
 			// 类型名
+			// #4180d3
 			"name": "Entity Name Type",
 			"scope": [
 				"entity.name.type",
@@ -468,7 +481,8 @@
 			],
 			"settings": {
 				// perfect #4B83CD
-				"foreground": "#4a83cf"
+				// "foreground": "#4180d3"
+				"foreground": "#333"
 				// "foreground": "#3b818ce9"
 			}
 		},
@@ -479,22 +493,44 @@
 		// 		"foreground": "#333"
 		// 	}
 		// },
+
+		// C++ preprocessor #
+		// {
+		// 	"name": "Preprocessor",
+		// 	"scope": [
+		// 		"punctuation.definition.directive.cpp",
+		// 		"punctuation.definition.directive.c"
+		// 	],
+		// 	"settings": {
+		// 		"foreground": "#333"
+		// 	}
+		// },
+		// C++ macro keyword
+		// #ca4242
 		{
-			"name": "Storage",
-			"scope": "storage",
+			"name": "Macro Keywords",
+			"scope": [
+				"keyword.control.directive.include.c",
+				"keyword.control.directive.include.cpp",
+				"keyword.control.directive.define.c",
+				"keyword.control.directive.define.cpp",
+			],
 			"settings": {
-				"foreground": "#A71D5D"
+				"foreground": "#ca4242"
 			}
 		},
 		{
 			// C++ include string
 			"name": "Include Strings",
 			"scope": [
-				"string.quoted.other.lt-gt.include.cpp"
+				"string.quoted.other.lt-gt.include.cpp",
+				"string.quoted.other.lt-gt.include.c",
+				"string.quoted.double.include.cpp",
+				"string.quoted.double.include.c",
 			],
 			"settings": {
 				// 		"foreground": "#333",
-				"foreground": "#5c2223cb"
+				"foreground": "#333"
 			}
 		},
 		{
@@ -516,8 +552,11 @@
 		},
 		{
 			// 属性
+			// #795DA3
 			"name": "Attributes",
-			"scope": "entity.other.attribute-name",
+			"scope": ["entity.other.attribute-name",
+					"meta.attribute.rust",
+		],
 			"settings": {
 				"foreground": "#795DA3"
 			}

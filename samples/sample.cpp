@@ -4,10 +4,19 @@
 #include <string>
 #include <vector>
 
+#include "sample.h"
+
+#define PI 3.14159265358979323846
+
 template <typename T>
 T add(T a, T b)
 {
     return a + b;
+}
+
+void addHobby(const std::string& hobby)
+{
+    std::cout << "Hobby added: " << hobby << "\n";
 }
 
 class Person {
@@ -20,14 +29,14 @@ public:
         : name(name)
         , age(age)
     {
-        std::cout << "Person created: " << name << ", age " << age << "\n";
+        std::cout << "Person created: " << this->name << ", age " << age << "\n";
     }
 
     virtual ~Person() { }
 
     virtual std::string introduce() const
     {
-        return "Hi, I'm " + name + " and I'm " + std::to_string(age) + " years old.";
+        return "Hi, I'm " + this->name + " and I'm " + std::to_string(age) + " years old.";
     }
 
     void addHobby(const std::string& hobby)
@@ -133,6 +142,9 @@ int main()
 
     void* p2 = malloc(5);
     free(p2);
+
+    const int cc = 10;
+    constexpr int cce = 20;
 
     return 0;
 }

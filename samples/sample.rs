@@ -1,3 +1,8 @@
+use std::ops::Fn;
+use std::sync::Arc;
+use std::sync::Mutex;
+use std::thread;
+
 #[derive(Debug)]
 struct HasLifetime<'a> {
     some_string: &'a str,
@@ -28,4 +33,6 @@ fn main() {
     let c = &a;
     let d = &mut b;
     let mut e = &mut b;
+
+    const CONST = 3;
 }

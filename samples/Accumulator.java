@@ -1,8 +1,11 @@
+@java.lang
 public class Accumulator {
     private double sum;
+
     public Accumulator(double sum0) {
         sum = sum0;
     }
+
     public double call(double n) {
         return sum += n;
     }
