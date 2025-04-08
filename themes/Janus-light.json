@@ -303,7 +303,7 @@
 		},
 		{
 			// 常量
-			// #ff9c46
+			// #ED6A43
 			"name": "Constant",
 			"scope": [
 				"entity.name.constant", // 常数
@@ -314,7 +314,7 @@
 				// "variable.other.readwrite.instance",
 			],
 			"settings": {
-				"foreground": "#ff9c46"
+				"foreground": "#ED6A43"
 			}
 		},
 		{
@@ -349,21 +349,23 @@
 		},
 		{
 			// this, super
-			// #ff9c46
+			// #ED6A43
 			"name": "Super",
 			"scope": [
 				"variable.language",
 			],
 			"settings": {
 				//"foreground": "#ED6A43"
-				"foreground": "#ff9c46"
+				"foreground": "#ED6A43"
 			}
 		},
 		{
 			// 关键字
 			// #ca4242
 			"name": "Keywords",
-			"scope": "keyword",
+			"scope": [
+				"keyword",
+			],
 			"settings": {
 				"foreground": "#ca4242"
 			}
@@ -493,7 +495,6 @@
 		// 		"foreground": "#333"
 		// 	}
 		// },
-
 		// C++ preprocessor #
 		// {
 		// 	"name": "Preprocessor",
@@ -554,9 +555,10 @@
 			// 属性
 			// #795DA3
 			"name": "Attributes",
-			"scope": ["entity.other.attribute-name",
-					"meta.attribute.rust",
-		],
+			"scope": [
+				"entity.other.attribute-name",
+				"meta.attribute.rust",
+			],
 			"settings": {
 				"foreground": "#795DA3"
 			}
