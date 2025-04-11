@@ -1,0 +1,51 @@
+# Top-level key-value pairs
+string_key = "This is a string"
+integer_key = 12345
+float_key = 3.14159
+boolean_true = true
+boolean_false = false
+date_key = 2025-04-12T10:30:00Z # RFC 3339 date-time
+
+# Table
+[server]
+ip = "192.168.1.1"
+port = 80
+enabled = true
+
+# Nested Table
+[server.security]
+protocol = "TLSv1.2"
+ports = [80, 443]    # Array of integers
+
+# Array of scalars
+supported_versions = ["v1.0", "v1.1", "v2.0-beta"]
+
+# Array of Tables
+[[users]]
+id = 1
+name = "Alice"
+roles = ["admin", "editor"] # Array within table
+
+[[users]]
+id = 2
+name = "Bob"
+roles = ["viewer"]
+
+# Inline Table
+point = { x = 1, y = 2 }
+
+# Multi-line strings
+literal_string = """
+The first line.
+The second line.
+"""
+basic_string = '''
+Roses are red
+Violets are blue'''
+
+# Comments
+# This is a full line comment.
+commented_key = "value"                  # This is an inline comment.
+another_key = "value with # hash symbol" # Hash in string"
+
+[project.optional-dependencies]

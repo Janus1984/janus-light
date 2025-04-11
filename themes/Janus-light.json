@@ -282,6 +282,9 @@
 	},
 	"tokenColors": [
 		{
+			"name":"Base",
+			"scope":["source",
+		],
 			"settings": {
 				"foreground": "#333"
 			}
@@ -614,9 +617,14 @@
 				"foreground": "#183691"
 			}
 		},
+		// json/tomlyaml key
 		{
 			"name": "Json",
-			"scope": "support.type.property-name.json",
+			"scope": [
+				"support.type.property-name.json",
+				"support.type.property-name.toml",
+				"entity.name.tag.yaml"
+			],
 			"settings": {
 				"foreground": "#4B83CD"
 				// "foreground": "#3b818ce9"

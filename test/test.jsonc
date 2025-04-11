@@ -1,0 +1,52 @@
+{
+    // Basic key-value pairs
+    "string_key": "This is a string value, testing quotes",
+    "integer_key": 12345,
+    "float_key": 3.14159,
+    "boolean_true": true,
+    "boolean_false": false,
+    "null_key": null,
+    "date_string": "2025-04-12", // Dates are typically strings in JSON
+    // Nested object (mapping)
+    "server_config": {
+        "host": "api.example.com",
+        "port": 8080,
+        "security": {
+            "enabled": true,
+            "protocol": "TLSv1.2",
+            "allowed_ips": [ // Nested array (sequence) within object
+                "192.168.1.100",
+                "10.0.0.5"
+            ]
+        }
+    },
+    // Array (sequence) of scalars
+    "supported_versions": [
+        "v1.0",
+        "v1.1",
+        "v2.0-beta"
+    ],
+    // Array of objects
+    "users": [
+        {
+            "id": 1,
+            "name": "Alice",
+            "roles": [
+                "admin",
+                "editor"
+            ] // Array within object item
+        },
+        {
+            "id": 2,
+            "name": "Bob",
+            "roles": [
+                "viewer"
+            ]
+        }
+    ],
+    /*
+   * Multi-line block comment
+   */
+    "commented_key": "value", // This is an inline comment
+    "another_key": "value with // comment-like symbols"
+}

@@ -1,0 +1,68 @@
+# Basic key-value pairs with different scalar types
+string_key: "This is a string value, testing quotes"
+integer_key: 12345
+float_key: 3.14159
+boolean_true: true
+boolean_false: false
+null_key: null
+date_key: 2025-04-12 # ISO 8601 date format
+
+# Nested mapping
+server_config:
+  host: "api.example.com"
+  port: 8080
+  security:
+    enabled: true
+    protocol: "TLSv1.2"
+    allowed_ips: # Nested sequence within mapping
+      - "192.168.1.100"
+      - "10.0.0.5"
+
+# Sequence (list) of scalars
+supported_versions:
+  - v1.0
+  - v1.1
+  - v2.0-beta
+
+# Sequence of mappings
+users:
+  - id: 1
+    name: Alice
+    roles: ["admin", "editor"] # Sequence within sequence item
+  - id: 2
+    name: Bob
+    roles: ["viewer"]
+
+# Anchors and Aliases for reuse
+default_settings: &defaults
+  timeout: 30
+  retries: 3
+
+service_a:
+  <<: *defaults # Merge key using alias
+  name: Service A
+  specific_setting: "value_a"
+
+service_b:
+  <<: *defaults
+  name: Service B
+  timeout: 60 # Override default
+
+# Multi-line strings
+literal_block: |
+  This is the first line.
+  This is the second line.
+    Indentation is significant here.
+  The final line.
+folded_block: >
+  This text will be folded into
+  a single line, removing single newlines,
+  but preserving paragraph breaks indicated by blank lines.
+
+  This starts a new paragraph.
+
+# Comments
+# This is a full line comment.
+commented_key: value # This is an inline comment after a value.
+# - commented_out_item
+another_key: "value with # hash symbol" # Hash in string
