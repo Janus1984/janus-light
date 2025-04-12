@@ -291,7 +291,7 @@
 		},
 		{
 			// 变量
-			// #4180d3
+			// #3270c0
 			"name": "Instance",
 			"scope": [
 				"variable.other", // 声明的变量
@@ -301,7 +301,8 @@
 				"variable.other.constant", // const声明的不可变变量
 			],
 			"settings": {
-				"foreground": "#4180d3"
+				// "foreground": "#4180d3"
+				"foreground": "#3270c0"
 			}
 		},
 		{
@@ -338,7 +339,7 @@
 		},
 		{
 			// 字符串字面量
-			// #489591
+			// #1a8f89
 			"name": "Strings",
 			"scope": [
 				"string",
@@ -347,7 +348,7 @@
 			"settings": {
 				// perfect #327d7d
 				// now #3b818ce9
-				"foreground": "#489591"
+				"foreground": "#1a8f89"
 			}
 		},
 		{
@@ -439,13 +440,13 @@
 		},
 		{
 			// 函数形参
-			// #4180d3
+			// #3270c0
 			"name": "Function Parameters",
 			"scope": [
 				"variable.parameter",
 			],
 			"settings": {
-				"foreground": "#4180d3"
+				"foreground": "#3270c0"
 			}
 		},
 		{
@@ -473,7 +474,7 @@
 		},
 		{
 			// 类型名
-			// #4180d3
+			// #333333
 			"name": "Entity Name Type",
 			"scope": [
 				"entity.name.type",
@@ -618,6 +619,7 @@
 			}
 		},
 		// json/tomlyaml key
+		// #3270c0
 		{
 			"name": "Json",
 			"scope": [
@@ -626,8 +628,8 @@
 				"entity.name.tag.yaml"
 			],
 			"settings": {
-				"foreground": "#4B83CD"
-				// "foreground": "#3b818ce9"
+				// "foreground": "#4B83CD"
+				 "foreground": "#3270c0"
 			}
 		},
 		{
