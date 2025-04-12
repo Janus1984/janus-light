@@ -291,7 +291,7 @@
 		},
 		{
 			// 变量
-			// #3270c0
+			// #326fc0
 			"name": "Instance",
 			"scope": [
 				"variable.other", // 声明的变量
@@ -302,12 +302,12 @@
 			],
 			"settings": {
 				// "foreground": "#4180d3"
-				"foreground": "#3270c0"
+				"foreground": "#326fc0"
 			}
 		},
 		{
 			// 常量
-			// #ED6A43
+			// #f29317
 			"name": "Constant",
 			"scope": [
 				"entity.name.constant", // 常数
@@ -318,7 +318,8 @@
 				// "variable.other.readwrite.instance",
 			],
 			"settings": {
-				"foreground": "#ED6A43"
+				//"foreground": "#ED6A43"
+				"foreground": "#f29317"
 			}
 		},
 		{
@@ -339,7 +340,7 @@
 		},
 		{
 			// 字符串字面量
-			// #1a8f89
+			// #009485
 			"name": "Strings",
 			"scope": [
 				"string",
@@ -347,20 +348,24 @@
 			],
 			"settings": {
 				// perfect #327d7d
-				// now #3b818ce9
-				"foreground": "#1a8f89"
+				// now #1a8f89
+				"foreground": "#009485"
 			}
 		},
 		{
 			// this, super
-			// #ED6A43
+			// #f29317
 			"name": "Super",
 			"scope": [
 				"variable.language",
+				"variable.language.this.cpp",
+				"variable.parameter.function.language.special.self.python",
+				"variable.language.special.self.python",
+				"variable.language.self.rust"
 			],
 			"settings": {
 				//"foreground": "#ED6A43"
-				"foreground": "#ED6A43"
+				"foreground": "#f29317"
 			}
 		},
 		{
@@ -440,27 +445,29 @@
 		},
 		{
 			// 函数形参
-			// #3270c0
+			// #326fc0
 			"name": "Function Parameters",
 			"scope": [
 				"variable.parameter",
 			],
 			"settings": {
-				"foreground": "#3270c0"
+				"foreground": "#326fc0"
 			}
 		},
 		{
 			// 枚举值
+			// #f29317
 			"name": "Enum Values",
 			"scope": [
 				"variable.other.enummember.cpp",
 			],
 			"settings": {
-				"foreground": "#ED6A43"
+				"foreground": "#f29317"
 			}
 		},
 		{
 			// 基类
+			// #333333
 			"name": "Classes",
 			"scope": [
 				"support.class",
@@ -488,7 +495,7 @@
 			"settings": {
 				// perfect #4B83CD
 				// "foreground": "#4180d3"
-				"foreground": "#333"
+				"foreground": "#333333"
 				// "foreground": "#3b818ce9"
 			}
 		},
@@ -535,11 +542,12 @@
 			],
 			"settings": {
 				// 		"foreground": "#333",
-				"foreground": "#333"
+				"foreground": "#333333"
 			}
 		},
 		{
 			// 整数字面量
+			// #5c2223cb
 			"name": "Integers",
 			"scope": "constant.numeric",
 			"settings": {
@@ -549,6 +557,7 @@
 		},
 		{
 			// 标签
+			// #63a3a4
 			"name": "Tag",
 			"scope": "entity.name.tag",
 			"settings": {
@@ -558,6 +567,7 @@
 		{
 			// 属性
 			// #795DA3
+			// #950095
 			"name": "Attributes",
 			"scope": [
 				"entity.other.attribute-name",
@@ -619,7 +629,7 @@
 			}
 		},
 		// json/tomlyaml key
-		// #3270c0
+		// #326fc0
 		{
 			"name": "Json",
 			"scope": [
@@ -629,7 +639,7 @@
 			],
 			"settings": {
 				// "foreground": "#4B83CD"
-				 "foreground": "#3270c0"
+				 "foreground": "#326fc0"
 			}
 		},
 		{

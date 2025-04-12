@@ -1,6 +1,7 @@
+# python有点麻烦，模块和变量都是source.python，没有更细的分类了
+
 # 变量
 from enum import Enum
-
 
 a: int = 1
 b: str = "hello world!"

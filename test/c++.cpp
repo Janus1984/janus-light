@@ -11,6 +11,10 @@ const int PI = 3;
 // vector
 std::vector<int> v = { 1, 2, 3 };
 
+// string
+const char* cstr = "Hello, World!";
+std::string str = "Hello, World!";
+
 // 函数
 int add(int a, int b)
 {
