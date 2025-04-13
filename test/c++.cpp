@@ -1,20 +1,31 @@
 #include <string>
 #include <vector>
 
-// 变量
-int a = 1;
-float b = 2.1;
+int main()
+{
 
-// 常量
-const int PI = 3;
+    // 变量
+    int a = 1;
+    float b = 2.1;
 
-// vector
-std::vector<int> v = { 1, 2, 3 };
+    // 常量
+    const int PI = 3;
 
-// string
-const char* cstr = "Hello, World!";
-std::string str = "Hello, World!";
+    // vector
+    std::vector<int> v = { 1, 2, 3 };
+    v[1] = 4;
 
+    // string
+    const char* cstr = "Hello, World!";
+    std::string str = "Hello, World!";
+
+    // new/delete的高亮会被clangd覆盖
+    // 需要在clangd的配置文件中添加disabledkind
+    int* ptr = new int(5);
+    delete ptr;
+
+    return 0;
+}
 // 函数
 int add(int a, int b)
 {
