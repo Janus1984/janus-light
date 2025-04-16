@@ -9,7 +9,7 @@ let mut v:Vec<i32> = vec![1, 2, 3];
 let mut m:HashMap<i32, i32> = HashMap::new();
 
 // 常量
-let b:i32 = 2;
+const B:i32 = 2;
 
 // 函数
 fn add(a:i32, b:i32) -> i32 {
@@ -26,8 +26,8 @@ trait Test {
 // struct
 #[derive(Debug)]
 struct Person {
-    name: String,
-    age: i32
+    name: String;
+    age: i32;
 }
 
 // impl

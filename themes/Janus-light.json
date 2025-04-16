@@ -338,7 +338,9 @@
 				"variable.other.readwrite", // let、var声明的变量
 				"variable.other.member", // 类的字段
 				"variable.other.object.property", // 调用对象属性方法
-				"variable.other.constant", // const声明的不可变变量
+				"variable.other.property", // 数据成员
+				"variable.object.property", // ts/js数据成员
+				"support.variable.property",
 			],
 			"settings": {
 				// "foreground": "#4180d3"
@@ -354,12 +356,13 @@
 				// "variable",
 				"constant.other.caps.python", // Python中的大写常量
 				"constant.other.caps.rust", // Rust中的大写常量
+				"variable.other.constant", // const声明的不可变变量
 				// "variable.other.block",
 				// "variable.other.readwrite.instance",
 			],
 			"settings": {
-				//"foreground": "#ED6A43"
-				"foreground": "#f29317"
+				//"foreground": "#895656"
+				 "foreground": "#f29317"
 			}
 		},
 		{
@@ -372,9 +375,10 @@
 				"constant.character.escape.scss",
 				"constant.character.escape.css",
 				"constant.language.symbol",
+				"constant.numeric",
 			],
 			"settings": {
-				// #5c2223cb
+				// #895656
 				"foreground": "#895656"
 			}
 		},
@@ -549,16 +553,16 @@
 				"foreground": "#333333"
 			}
 		},
-		{
+		// {
 			// 整数字面量
 			// #5c2223cb
-			"name": "Integers",
+/* 			"name": "Integers",
 			"scope": "constant.numeric",
 			"settings": {
 				// perfect #EB5368
 				"foreground": "#5c2223cb"
 			}
-		},
+		}, */
 		{
 			// 标签
 			// #63a3a4
@@ -571,7 +575,7 @@
 		{
 			// 属性
 			// #795DA3
-			// #950095
+			// #c866c9
 			"name": "Attributes",
 			"scope": [
 				"entity.other.attribute-name",
