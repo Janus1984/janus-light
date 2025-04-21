@@ -341,6 +341,7 @@
 				"variable.other.property", // 数据成员
 				"variable.object.property", // ts/js数据成员
 				"support.variable.property",
+				"meta.method.body.java", // java方法体内变量
 			],
 			"settings": {
 				// "foreground": "#4180d3"
@@ -498,7 +499,9 @@
 				"storage.type.primitive",
 				"support.type",
 				"support.type.property-name",
-				"support.class.cpp" // vector string
+				"support.class.cpp", // c++ vector string
+				"storage.type.java",
+				"storage.type.object", // java string
 			],
 			"settings": {
 				// perfect #4B83CD
@@ -580,6 +583,7 @@
 			"scope": [
 				"entity.other.attribute-name",
 				"meta.attribute.rust",
+				"storage.type.annotation.java"
 			],
 			"settings": {
 				"foreground": "#795DA3"
